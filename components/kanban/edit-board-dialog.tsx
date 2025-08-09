@@ -160,7 +160,7 @@ export function EditBoardDialog({ open, onOpenChange, onUpdateBoard, board }: Ed
         <DialogHeader>
           <DialogTitle>Edit Board</DialogTitle>
           <DialogDescription>
-            Update your board's title and color theme.
+            Update your board&apos;s title and color theme.
           </DialogDescription>
         </DialogHeader>
         <form onSubmit={handleSubmit}>
