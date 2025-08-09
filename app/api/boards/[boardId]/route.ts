@@ -5,7 +5,7 @@ import { AuthService } from '@/lib/auth'
 // Update board
 export async function PUT(
   request: NextRequest,
-  { params }: { params: { boardId: string } }
+  context: { params: Promise<{ boardId: string }> }
 ) {
   try {
     // Get token from HTTP-only cookie
@@ -29,6 +29,7 @@ export async function PUT(
 
     const body = await request.json()
     const { title, color } = body
+    const params = await context.params
     const boardId = params.boardId
 
     if (!title || !color) {
@@ -72,7 +73,7 @@ export async function PUT(
 // Delete board
 export async function DELETE(
   request: NextRequest,
-  { params }: { params: { boardId: string } }
+  context: { params: Promise<{ boardId: string }> }
 ) {
   try {
     // Get token from HTTP-only cookie
@@ -94,6 +95,7 @@ export async function DELETE(
       )
     }
 
+    const params = await context.params
     const boardId = params.boardId
 
     // Delete board
