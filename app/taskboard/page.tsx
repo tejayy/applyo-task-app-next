@@ -1,8 +1,10 @@
 import { Navbar } from "@/components/layout/navbar"
+import { ProtectedRoute } from "@/components/auth/protected-route"
 
 export default function TaskboardPage() {
 
   return (
+    <ProtectedRoute>
     <div className="min-h-screen bg-gray-50">
       <Navbar />
       <main className="flex-1 p-6">
@@ -14,5 +16,6 @@ export default function TaskboardPage() {
         </div>
       </main>
     </div>
+  </ProtectedRoute>
   )
 }
