@@ -4,16 +4,23 @@ A modern task management application built with Next.js that helps users organiz
 
 ---
 
+## 🌐 Live Demo
+
+🚀 Deployed App:  
+https://applyo-task-app-next-rdxqch5dh-tejayys-projects.vercel.app/dashboard
+
+---
+
 ## 🚀 Features
 
 - ✅ Create, update, and delete tasks
 - 📋 Organize daily workflows efficiently
 - ⚡ Fast and responsive UI powered by Next.js
 - 🔐 Authentication & secure user sessions
-- 📱 Mobile-friendly responsive design
-- 🎨 Clean and modern user interface
-- 🌙 Scalable full-stack architecture
-- 🔄 Real-time workflow management experience
+- 📱 Fully responsive design
+- 🎨 Clean and modern dashboard UI
+- 🗂️ Task organization & workflow tracking
+- 🌙 Scalable architecture using Next.js
 
 ---
 
@@ -23,16 +30,16 @@ A modern task management application built with Next.js that helps users organiz
 - Next.js
 - React.js
 - TypeScript / JavaScript
-- Tailwind CSS (if used)
+- Tailwind CSS
 
 ### Backend
-- Next.js API Routes / Backend Services
+- Next.js API Routes
 
 ### Database
-- MongoDB / PostgreSQL / Prisma / Firebase *(update based on your stack)*
+- MongoDB / PostgreSQL / Prisma *(update if needed)*
 
-### Authentication
-- NextAuth / JWT / Firebase Auth *(update accordingly)*
+### Deployment
+- Vercel
 
 ---
 
@@ -97,7 +104,7 @@ DATABASE_URL=your_database_url
 NEXTAUTH_SECRET=your_secret
 ```
 
-*(Modify variables based on your project setup.)*
+*(Modify variables according to your setup.)*
 
 ---
 
@@ -114,12 +121,12 @@ Add application screenshots here.
 ## 📈 Future Improvements
 
 - Drag-and-drop task management
-- Team collaboration features
+- Team collaboration support
 - Notifications & reminders
 - Dark mode support
-- Analytics dashboard
-- Task priority & labels
 - Calendar integration
+- Task priorities & labels
+- Productivity analytics dashboard
 
 ---
 
